@@ -23,7 +23,7 @@ return {
       local cmp = require("cmp")
 
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
-        ["<CR>"] = cmp.mapping.confirm({ select = false }),
+        ["<CR>"] = vim.NIL,
         ["<Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then
             cmp.confirm({ select = true })
