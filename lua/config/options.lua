@@ -3,4 +3,4 @@
 -- Add any additional options here
 
 vim.g.autoformat = false
-vim.g.breakindent = true
+vim.o.breakindent = true
