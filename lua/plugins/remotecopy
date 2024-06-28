@@ -1,3 +1,4 @@
+-- Change the filename to .lua to enable it
 return {
   "ojroques/nvim-osc52",
   event = "TextYankPost",
