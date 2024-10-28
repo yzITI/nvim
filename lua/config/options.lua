@@ -5,3 +5,4 @@
 vim.g.autoformat = false
 vim.o.breakindent = true
 vim.o.wrap = true
+vim.o.conceallevel = 0
