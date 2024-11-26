@@ -1,5 +1,5 @@
 return {
-  "nvimdev/dashboard-nvim",
+  "folke/snacks.nvim",
   opts = function(_, opts)
     local logo = [[
 ████████████████████  ████████████████████  ████████████████████
@@ -12,8 +12,10 @@ return {
 █████████  █████████  █████████  █████████  █████████  █████████
 ████████████████████  ████████████████████  ████████████████████
     ]]
-    logo = "\n\n\n" .. logo .. "\n\n"
-    opts.config.header = vim.split(logo, "\n")
-    vim.api.nvim_set_hl(0, "DashboardHeader", { fg = "White" })
+    opts.dashboard.preset.header = "\n\n\n" .. logo .. "\n\n"
+    vim.api.nvim_set_hl(0, "SnacksDashboardHeader", { fg = "White" })
+    vim.api.nvim_set_hl(0, "SnacksDashboardIcon", { fg = "White" })
+    vim.api.nvim_set_hl(0, "SnacksDashboardDesc", { fg = "White" })
+    vim.api.nvim_set_hl(0, "SnacksDashboardKey", { fg = "White" })
   end,
 }
