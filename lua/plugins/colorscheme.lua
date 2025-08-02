@@ -1,4 +1,6 @@
 return {
+  { "folke/tokyonight.nvim", enable = false },
+  { "catppuccin/nvim", enable = false },
   { "loctvl842/monokai-pro.nvim" },
 
   {
